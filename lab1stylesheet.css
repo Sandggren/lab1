@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: white;
+    font-family: Arial, Helvetica;
 }
 
 .top, img {
@@ -13,8 +14,7 @@ body {
 }
 
 .logo {
-    display: grid; justify-content: right;
-    font-family: Arial, Helvetica;
+    display: grid; justify-items: right;
     font-size: 50px;
     font-weight: 400;
     margin-right: 10px;
@@ -24,24 +24,22 @@ body {
 .navbar {
     border-top-style: solid;
     border-bottom-style: solid;
-    color-scheme: black;
 }
 
 li {
-    display: grid; justify-content: left; 
+    display: grid; justify-items: left; 
 }
 
 .btn { 
     background-color: white;
     border-color: black;
-    border-style: hidden;
+    border-style: none;
     height: 75px;
     width: 150px;
     margin-top: 15px;
     margin-bottom: 10px;
     margin-left: 15px;
     font-size: 25px;
-    font-family: Arial, Helvetica;
 }
 
 .btn:link {
@@ -66,11 +64,10 @@ li {
     margin-right: 60%;
     margin-left: 35%;
     margin-top: 100px;
-    margin-bottom: 0%;
+    margin-bottom: 0;
 }
 
 .main1 {
-    font-family: Arial, Helvetica;
     display: grid;
     margin-top: 0%;
     margin-left: 50%;
@@ -83,27 +80,25 @@ li {
     height: auto;
     display: grid;
     margin-right: 50%;
-    margin-left: -3%;
+    margin-left: 0;
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
 .main2 {
-    font-family: Arial, Helvetica;
     display: grid;
     margin-top: 10px;
     margin-right: 40%;
     margin-left: 20%;
-    margin-bottom: 0%;
+    margin-bottom: 0;
 }
 
 .internship {
     display: grid;
     margin-left: 60%;
     margin-right: 20%;
-    margin-top: 0%;
+    margin-top: 0;
     margin-bottom: 100px;
-    font-family: Arial, Helvetica;
     
 }
 
@@ -115,7 +110,6 @@ li {
 .main3 {
     display: grid;
     text-align: center;
-    font-family: Arial, Helvetica;
     margin-top: 20px;
     margin-left: 30%;
     margin-right: 30%;
@@ -123,24 +117,21 @@ li {
 
 .movies {
     display: grid;
-    font-family: Arial, Helvetica;
-    margin-top: 0%;
+    margin-top: 0;
     margin-left: 50%;
     margin-right: 25%;
 }
 
 .otherinterests {
     display: grid; text-align: center;
-    font-family: Arial, Helvetica;
     font-size: large;
-    margin-top: 0%;
+    margin-top: 0;
     margin-left: 50%;
     margin-right: 25%;
 }
 
 .interestlist {
     display: grid; justify-content: center;
-    font-family: Arial, Helvetica;
     font-size: medium;
     margin-bottom: 60px;
     margin-top: 10px;
@@ -149,12 +140,10 @@ li {
 }
 
 h1 {
-    font-family: Arial, Helvetica;
     font-size: larger;
 }
 
 h2 {
-    font-family: Arial, Helvetica;
     font-size: large;
 }
 
@@ -187,26 +176,33 @@ tr {
     height: 50px;
 }
 
-th, td {
+td {
     font-family: Arial, Helvetica;
     text-align: center;
     border-style: hidden;
     width: 350px;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 768px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        font-family: Arial, Helvetica;
+    }
     
     .top, img {
         margin-top: 20px;
         margin-bottom: 20px;
-        display: grid; justify-content: center;
+        display: grid; justify-items: center;
         margin: auto;
         width: 200px;
     }
     
     .logo {
-        display: grid; justify-content: center;
-        font-family: Arial, Helvetica;
+        display: grid; justify-items: center;
         font-size: 50px;
         font-weight: 400;
         margin-right: 10px;
@@ -214,11 +210,10 @@ th, td {
     }
     
     li {
-        display: grid; justify-content: center; 
+        display: grid; justify-items: center; 
     }
 
     .main1 {
-        font-family: Arial, Helvetica;
         display: grid;
         margin-top: 0%;
         margin-left: 25%;
@@ -227,7 +222,6 @@ th, td {
     }
 
     .main2 {
-        font-family: Arial, Helvetica;
         display: grid;
         margin-top: 10px;
         margin-right: 20%;
@@ -241,14 +235,12 @@ th, td {
         margin-right: 10%;
         margin-top: 0%;
         margin-bottom: 100px;
-        font-family: Arial, Helvetica;
         
     }
 
     .main3 {
         display: grid;
         text-align: center;
-        font-family: Arial, Helvetica;
         margin-top: 20px;
         margin-left: 15%;
         margin-right: 15%;
@@ -256,7 +248,6 @@ th, td {
     
     .movies {
         display: grid;
-        font-family: Arial, Helvetica;
         margin-top: 0%;
         margin-left: 25%;
         margin-right: 12.5%;
@@ -264,7 +255,6 @@ th, td {
     
     .otherinterests {
         display: grid; text-align: center;
-        font-family: Arial, Helvetica;
         font-size: large;
         margin-top: 0%;
         margin-left: 25%;
@@ -273,7 +263,6 @@ th, td {
     
     .interestlist {
         display: grid; justify-content: center;
-        font-family: Arial, Helvetica;
         font-size: medium;
         margin-bottom: 60px;
         margin-top: 10px;
@@ -285,10 +274,10 @@ th, td {
         height: 50px;
     }
     
-    th, td {
+    td {
         display: grid;
-        font-family: Arial, Helvetica;
         text-align: center;
         border-style: hidden;
+        margin-top: 10px;
     }
 }
