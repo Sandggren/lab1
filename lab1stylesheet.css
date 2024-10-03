@@ -1,57 +1,283 @@
 body {
-    background-image: url(bakgrund4.jpg)
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: Arial, Helvetica;
+}
+
+.top, img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    margin: auto;
+    width: 200px;
 }
 
 .logo {
-    color: black;
-    font-size: 30px;
-    font-weight: 100;
-    margin-left: 20px;
-    text-decoration: none;
+    display: grid; justify-items: right;
+    font-size: 50px;
+    font-weight: 400;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .navbar {
-    background: white; font-family: Arial, Helvetica; padding-right: 5px; padding-left: 5px; 
-}
-
-.navdiv {
-    display: flex; align-items: center; justify-content: space-between;
+    border-top-style: solid;
+    border-bottom-style: solid;
 }
 
 li {
-    display: inline-block;
+    display: grid; justify-items: left; 
 }
 
-li a{
+.btn { 
+    background-color: white;
+    border-color: black;
+    border-style: none;
+    height: 75px;
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.btn:link {
     color: black;
-    font-size: 20px;
-    font-weight: 100;
-    margin-right: 15px;
-    padding: 10px;
-    text-decoration: none;
 }
 
-h2 {
-    font-family: 'Arial', Helvetica;
-    text-align: center;
+.btn:visited {
+    color: black;
 }
 
-p {
-    font-family: 'Arial', Helvetica;
-    text-align: center;
+.btn:hover, .btn:focus {
+    background-color: black;
+    border-color: white;
+    border-radius: 60px;
+    width: 200px;
+    color: white;
+    transition: 1s;
+}
+
+.selfportrait {
+    display: grid;
+    margin-right: 60%;
+    margin-left: 35%;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.main1 {
+    display: grid;
+    margin-top: 0%;
+    margin-left: 50%;
+    margin-right: 400px;
+    margin-bottom: 100px;
+}
+
+.library {
+    width: 60%;
+    height: auto;
+    display: grid;
+    margin-right: 50%;
+    margin-left: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.main2 {
+    display: grid;
+    margin-top: 10px;
+    margin-right: 40%;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+
+.internship {
+    display: grid;
+    margin-left: 60%;
+    margin-right: 20%;
+    margin-top: 0;
+    margin-bottom: 100px;
     
 }
 
-h3 {
+.foodpicture {
+    margin-top: 50px;
+    display: grid;
+}
+
+.main3 {
+    display: grid;
     text-align: center;
-    font-family: 'Arial', Helvetica;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
-img {
-    height: auto;
-    width: 200px;
-    display: block;
-    margin: auto;
-   
+.movies {
+    display: grid;
+    margin-top: 0;
+    margin-left: 50%;
+    margin-right: 25%;
 }
 
+.otherinterests {
+    display: grid; text-align: center;
+    font-size: large;
+    margin-top: 0;
+    margin-left: 50%;
+    margin-right: 25%;
+}
+
+.interestlist {
+    display: grid; justify-content: center;
+    font-size: medium;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    margin-left: 50%;
+    margin-right: 25%;
+}
+
+h1 {
+    font-size: larger;
+}
+
+h2 {
+    font-size: large;
+}
+
+a:link {
+    color: rgb(159, 159, 159);
+    text-decoration: none;
+    border-radius: 15px;
+  }
+
+a:visited {
+    color: rgb(159, 159, 159);
+}
+
+a:hover, a:focus {
+    color: white;
+    transition: 2s;
+}
+
+.endpage, .endbar {
+    background-color: black;
+    color: rgb(159, 159, 159);
+    padding: 20px 25px;
+    margin-bottom: 0%;
+    font-family: Arial, Helvetica;
+    text-align: center;
+    text-decoration: none;
+}
+
+tr {
+    height: 50px;
+}
+
+td {
+    font-family: Arial, Helvetica;
+    text-align: center;
+    border-style: hidden;
+    width: 350px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        font-family: Arial, Helvetica;
+    }
+    
+    .top, img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: grid; justify-items: center;
+        margin: auto;
+        width: 200px;
+    }
+    
+    .logo {
+        display: grid; justify-items: center;
+        font-size: 50px;
+        font-weight: 400;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    
+    li {
+        display: grid; justify-items: center; 
+    }
+
+    .main1 {
+        display: grid;
+        margin-top: 0%;
+        margin-left: 25%;
+        margin-right: 100px;
+        margin-bottom: 100px;
+    }
+
+    .main2 {
+        display: grid;
+        margin-top: 10px;
+        margin-right: 20%;
+        margin-left: 10%;
+        margin-bottom: 0%;
+    }
+    
+    .internship {
+        display: grid;
+        margin-left: 40%;
+        margin-right: 10%;
+        margin-top: 0%;
+        margin-bottom: 100px;
+        
+    }
+
+    .main3 {
+        display: grid;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    .movies {
+        display: grid;
+        margin-top: 0%;
+        margin-left: 25%;
+        margin-right: 12.5%;
+    }
+    
+    .otherinterests {
+        display: grid; text-align: center;
+        font-size: large;
+        margin-top: 0%;
+        margin-left: 25%;
+        margin-right: 12.5%;
+    }
+    
+    .interestlist {
+        display: grid; justify-content: center;
+        font-size: medium;
+        margin-bottom: 60px;
+        margin-top: 10px;
+        margin-left: 25%;
+        margin-right: 12.5%;
+    }
+
+    tr {
+        height: 50px;
+    }
+    
+    td {
+        display: grid;
+        text-align: center;
+        border-style: hidden;
+        margin-top: 10px;
+    }
+}
